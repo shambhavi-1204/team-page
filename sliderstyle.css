@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+      background-image: url(bg.svg);
+      font-size: 14px;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+
+    }
+
+.heading {
+  color: #E43F6F;
+  text-shadow: 2px 4px 0px white;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  font-size: 70px;
+  margin-top: 1.5em;
+}
+
+
+
+    .swiper-container {
+      width: 100%;
+      padding-top: 4em;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 400px;
+      height: auto;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Fredoka One', cursive;
+    }
+
+    .card {
+      background-color: #3772FF;
+      height: 100%;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+    }
+
+    .card__name {
+      margin-top: 15px;
+      font-size: 1.5em;
+    }
+
+    .card__image {
+      height: 160px;
+      width: 160px;
+      border-radius: 50%;
+      margin-top: 20px;
+      border: 6px solid #FDCA40;
+      background-color: white;
+    }
+
+
+    .social-icons {
+      padding: 0;
+      list-style: none;
+      margin: 1em;
+      display: flex;
+    }
+
+    .social-icons li {
+      display: inline-block;
+      margin: 0.2em;
+      position: relative;
+      font-size: 1.2em;
+      display: flex;
+    }
+
+    .social-icons i {
+      color: #fff;
+      position: absolute;
+      top: 0.95em;
+      left: 0.96em;
+      transition: all 265ms ease-out;
+      display: flex;
+    }
+
+    .social-icons a {
+      display: flex;
+    }
+
+    .social-icons a:before {
+      transform: scale(1);
+      -ms-transform: scale(1);
+      -webkit-transform: scale(1);
+      content: " ";
+      width: 45px;
+      height: 45px;
+      border-radius: 100%;
+      display: block;
+      background: #E43F6F;
+      transition: all 265ms ease-out;
+    }
+
+    .social-icons a:hover:before {
+      transform: scale(0);
+      transition: all 265ms ease-in;
+    }
+
+    .social-icons a:hover i {
+      transform: scale(2.2);
+      -ms-transform: scale(2.2);
+      -webkit-transform: scale(2.2);
+      background: white;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 265ms ease-in;
+    }
+
+    @media only screen and (max-width: 600px) {
+
+      .swiper-container {
+        height: 70%;
+      }
+  }
+
+  @media only screen and (min-width: 600px) {
+    .swiper-container {
+      height: 80%;
+    }
+  }
